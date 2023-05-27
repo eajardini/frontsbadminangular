@@ -1,4 +1,4 @@
-# SB Admin Angular
+# SB Admin Angular utilizado para aula e treinamento
 
 SB Admin Angular is a free and open-sourced Bootstrap themed Angular 9 starter project.
 

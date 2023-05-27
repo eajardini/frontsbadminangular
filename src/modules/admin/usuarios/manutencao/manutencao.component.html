@@ -1,17 +1,40 @@
-<sb-layout-dashboard
-    ><sb-dashboard-head title="Manutenção de usuários" [hideBreadcrumbs]="false"></sb-dashboard-head
-    ><sb-card>
+<sb-layout-dashboard><sb-dashboard-head title="Manutenção de usuários" [hideBreadcrumbs]="false"></sb-dashboard-head>
+    <sb-card>
         <div class="card-body">
             The table below is adapted from ng-bootsrap. For more information, please visit the
-            <a target="_blank" href="https://ng-bootstrap.github.io/#/components/table/overview"
-                >ng-bootstrap table documentation</a
-            >.
-        </div> </sb-card
-    ><sb-card>
+            <a target="_blank" href="https://ng-bootstrap.github.io/#/components/table/overview">ng-bootstrap table
+                documentation</a>.
+        </div>
+    </sb-card>
+    <sb-card>
         <div class="card-header">
             <fa-icon class="mr-1" [icon]="['fas', 'table']"></fa-icon>DataTable Example
         </div>
         <div class="card-body">
-           
-        </div> </sb-card
-></sb-layout-dashboard>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Country</th>
+                        <th scope="col">Area</th>
+                        <th scope="col">Population</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let pessoa of pessoas; index as i">
+                        <th scope="row">{{ i + 1 }}</th>
+                        <td>
+                            <img [src]="'https://upload.wikimedia.org/wikipedia/commons/' + country.flag" class="me-2"
+                                style="width: 20px" />
+                            {{ pessoa.Nome }}
+                        </td>
+                        <td>{{ pessoa.Idade  }}</td>
+                        <td>{{ pessoa.Datanasc  }}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+    </sb-card></sb-layout-dashboard>

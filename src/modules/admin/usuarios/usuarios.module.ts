@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+// import { HttpEvent, HttpInterceptor, HttpHandler, HttpRequest } from '@angular/common/http';
+// import { Observable } from 'rxjs';
+
+
 
 /* Modules */
 import { AppCommonModule } from '@common/app-common.module';
@@ -24,7 +28,7 @@ import { ManutencaoComponent } from './manutencao/manutencao.component';
 
 
 @NgModule({
-  declarations: [    ManutencaoComponent,],
+  declarations: [ ManutencaoComponent,],
   imports: [     
     CommonModule,
     RouterModule,
@@ -32,6 +36,7 @@ import { ManutencaoComponent } from './manutencao/manutencao.component';
     FormsModule,
     AppCommonModule,
     NavigationModule,
+    // HttpRequest,
     
 
   ]
